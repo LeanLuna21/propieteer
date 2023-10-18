@@ -1,0 +1,39 @@
+
+Nuestro sitio 
+Tanto el <head>, como el <header>, y el <footer> de las 4 páginas  está elaborado desde javascript (Esto se encuentra en el documento “main.js”), ya que el contenido de dichas etiquetas es igual para las 4 páginas. 
+El <head> cuenta con los links tanto al documento css, como a flaticon para el icono de la pestaña, y a Google Fonts para las fuentes utilizadas en el sitio.
+El <nav> cuenta con los links a las otras páginas y con un logo que te lleva al ‘home’(index.html). Exceptuando el ‘home’, la barra de navegación se queda anclada arriba para facilitar el acceso a las otras páginas.
+El <footer> cuenta con el logo una vez más para no tener que volver hacia arriba, y también con nuestras redes sociales; cada una te redirecciona al sitio correspondiente. Por último contiene la dirección de nuestra sede, junto con un teléfono de contacto y nuestro mail (el cual te direcciona a la casilla para poder contactarse. )
+
+Principalmente, el sitio en si está dividido en 4 páginas: 
+1 – Index.html
+Esta página cuenta con un video en loop de fondo y con una sección con información acerca de nosotros. Dicha sección tiene al final 2 links desde los cuales se puede acceder a las otras pestañas, sin necesidad de tener que volver hacia arriba. Buscamos así que todo el sitio este conectado desde puntos claves. 
+2- Agentes.html
+Esta sección cuenta con 3 cards que muestran datos sobre los 4 agentes más valorados del sitio. Cada card contiene los datos del profesional tales como nombre, número de matricula, y datos de contacto (los cuales te redirigen a Whatsapp o al mail) para poder contratarlos. Por ultimo, usamos javascript para agregar 7 vendedores extras desde una api de randomuser. En dicha seccion se muestra nombre, apellido, una foto y la ciudad donde opera (esto se puede ver en los documentos “main.js” y  “agents.html”)
+3- Propiedades.html
+Esta sección cuenta con 3 cards que poseen datos de las propiedades en venta, las mismas tienen 2 botones que realizan acciones mediante JavaScript, el primer botón (Contactar) despliega un formulario en el que el usuario podrá ingresar sus datos, un comentario y por ultimo tiene 2 botones con las opciones de enviar o cerrar el formulario; el segundo botón (Mas Detalles) despliega un cuadro en el que se puede observar un detalle mas extenso de la propiedad, un mapa con la ubicación de la misma y también en la parte superior cuenta con un botón que permite cerrar el cuadro. 
+4- Vende.html
+Esta sección cuenta con el formulario de contacto para que la persona pueda listar su casa con nosotros, El mismo pide nombre, apellido y mail de forma obligatoria antes de enviarse. Así mismo, el mail necesitará tener un “@” para contar como válido. Además hay una caja de comentarios para que las personas puedan dejar mensajes. Todo esta validación está hecha mediante javascript y puede verse en el documento “form-validation.js”. Por último, al hacer click en enviar, si completó todo de forma correcta, será redireccionado a una página extra con el resumen de los datos enviados. Esta idea la sacamos de los primeros ejemplos de formulario que hicimos en clase. 
+
+Ademas...
+Todas las 4 páginas están diseñadas de forma responsiva, y mantienen la misma estética y colores (en el .css dejamos al principio todas las fuentes utilizadas). En cuanto a eso decidimos importar una fuente local y usar Google Fonts para las demás. 
+Por otra parte, en el index podemos ver 3 animaciones al ingresar al sitio o al recargar: el <header>  se inicializa de manera progresiva junto con el video;  el título principal se agranda hasta llegar a su escala por defecto, que es 1; y además incluimos un recuadro con un punto que indica que hay que deslizarse hacia abajo para seguir viendo el sitio.
+Por último, tanto en la pestaña del navegador como en el <footer> utilizamos Flaicons: para el logo de la pestaña y las redes. En el <head> del sitio dejamos las atribución al autor de la imágen
+Dato curioso:  La marca y el logo del sitio (la P con el slogan -Be real-) fué pensado con Inteligencia Artificial. 
+
+
+MAQUETACION
+Tanto en el index como en las demás páginas, las etiquetas <nav> y <footer> están maquetados con grid; ya que era la forma más práctica de ubicar los elementos dentro. Luego, por dentro tienen un display flexible, tanto para poder posicionar los links como las redes.  
+Luego, el <main> del index y las secciones de las demás paginas donde se encuentra el contenido principal (es decir, los “contendores” donde se ven los agentes, las propiedades, y el formulario) también están maquetadas usando grid. Y dejamos el <body> por defecto. 
+Como decidimos no usar bootstrap (ya que no era posible), todo el sitio está diseñado, pensado y escrito a mano. Se pueden encontrar todos los recursos usados en la carpeta ”resources”.
+
+ESTILOS
+Primero nos encargamos que el sitio se viera como lo habíamos pensado, en cuanto a la ubicación de los elementos. Luego fuimos viendo que ninguna clase se pisara y tratamos de unificar clases para que no se repitiera tanto código. Por último, le dimos formato a las fuentes y buscamos una paleta de colores que se ajuste al sitio. 
+
+DIVISION DE TAREAS
+Como mencionamos antes, cada miembro del equipo propuso de qué le gustaría encargarse y nos dividimos las tareas. Cada uno se encargó de escribir su parte del html del sitio, con su respectivo estilo. 
+El index, con el video de fondo, la sección con información acerca del negocio inmobiliario y el <nav> fue diseñado por Leandro Luna, al igual que la página de agentes. 
+Luego la sección de propiedades estuvo a cargo de Marco Núñez, quien también se encargo de crear las ventanas emergentes con la información extra  y el formulario de consulta para cada casa (esto puede verse desde el documento “Card-Casa.js”)
+La página del formulario, con su validación correspondiente desde javascript fue hecha por Romina Gargano (la validación se encuentra en el documento “form-validation.js”).
+Federica Tabroda por su parte se encargó del <footer> y de poner al equipo en marcha en un principio.
+Luego entre todos decidimos el estilo final para el sitio y le dimos los retoques finales.
